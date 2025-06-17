@@ -21,6 +21,7 @@ Este dashboard simula o ambiente de e-commerce e varejo da **Amazon**, oferecend
 * `data/`: Base de dados (Excel) utilizada.
 * `powerbi/`: Arquivo `.pbix` do dashboard Power BI.
 * `figma/`: Arquivos relacionados ao protótipo e design no Figma.
+* `quarto/`: Arquivo .qmd e sua versão HTML renderizada.
 * `README.md`: Este documento.
 * `LICENSE`: Licença do projeto (MIT License).
 
