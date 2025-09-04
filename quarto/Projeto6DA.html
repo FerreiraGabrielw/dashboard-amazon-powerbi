@@ -9,7 +9,7 @@
 <meta name="author" content="Gabriel Ferreira">
 <meta name="dcterms.date" content="2023-03-17">
 
-<title>Projeto: Dashboard Amazon - Análise de Vendas e Lucratividade</title>
+<title>Project: Amazon Dashboard - Sales and Profitability Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -48,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projeto: Dashboard Amazon - Análise de Vendas e Lucratividade</h1>
+<h1 class="title">Project: Amazon Dashboard - Sales and Profitability Analysis</h1>
 </div>
 
 
@@ -77,140 +77,140 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introdução" class="level1">
-<h1>Introdução</h1>
-<p>Este projeto apresenta um Dashboard de análise de vendas e lucratividade, desenvolvido para simular o ambiente de e-commerce e varejo da Amazon. O principal objetivo é fornecer uma visão detalhada do desempenho financeiro da empresa ao longo dos anos, identificar os produtos e categorias mais rentáveis, analisar o comportamento de compra dos clientes e avaliar a eficiência operacional, como o tempo de entrega. O painel visa capacitar a gestão a tomar decisões estratégicas relacionadas a estoque, precificação, marketing e otimização da cadeia de suprimentos.</p>
-<section id="estrutura-do-projeto" class="level2">
-<h2 class="anchored" data-anchor-id="estrutura-do-projeto">Estrutura do Projeto</h2>
-<p>O dashboard é organizado em diferentes seções, cada uma focando em um aspecto crucial da análise de negócios:</p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>This project presents a Sales and Profitability Analysis Dashboard, developed to simulate Amazon’s e-commerce and retail environment. The main objective is to provide a detailed view of the company’s financial performance over the years, identify the most profitable products and categories, analyze customer purchasing behavior, and evaluate operational efficiency, such as delivery time. The dashboard aims to empower management to make strategic decisions related to inventory, pricing, marketing, and supply chain optimization.</p>
+<section id="project-structure" class="level2">
+<h2 class="anchored" data-anchor-id="project-structure">Project Structure</h2>
+<p>The dashboard is organized into different sections, each focusing on a crucial aspect of business analysis:</p>
 <ul>
-<li><strong>Visão Geral Financeira</strong>: KPIs de vendas, lucro e margem, além de uma linha do tempo da performance anual.</li>
-<li><strong>Produtos e Clientes de Destaque</strong>: Identificação dos produtos mais vendidos e dos clientes mais lucrativos.</li>
-<li><strong>Análise por Categoria</strong>: Detalhamento de pedidos, lucro e vendas por diferentes categorias de produtos.</li>
-<li><strong>Eficiência Operacional e Comportamento de Pedidos</strong>: Avaliação do tempo médio de entrega e a distribuição de pedidos por mês e por cliente.</li>
+<li><strong>Financial Overview</strong>: KPIs for sales, profit, and margin, plus a timeline of annual performance.</li>
+<li><strong>Featured Products and Customers</strong>: Identification of best-selling products and most profitable customers.</li>
+<li><strong>Analysis by Category</strong>: Detailing orders, profit, and sales by different product categories.</li>
+<li><strong>Operational Efficiency and Order Behavior</strong>: Evaluation of average delivery time and the distribution of orders by month and by customer.</li>
 </ul>
 </section>
-<section id="tecnologias-utilizadas" class="level2">
-<h2 class="anchored" data-anchor-id="tecnologias-utilizadas">Tecnologias Utilizadas</h2>
-<p>Para a construção deste dashboard, as ferramentas empregadas foram:</p>
+<section id="technologies-used" class="level2">
+<h2 class="anchored" data-anchor-id="technologies-used">Technologies Used</h2>
+<p>For the construction of this dashboard, the tools employed were:</p>
 <ul>
-<li><strong>Power BI Desktop</strong>: Para conectar a fonte de dados, realizar a modelagem e transformação necessárias, desenvolver as medidas DAX para cálculos complexos e construir os visuais interativos que compõem o dashboard.</li>
-<li><strong>Figma</strong>: A prototipação e o design do dashboard foram feitos com o Figma, garantindo uma experiência de usuário intuitiva e visualmente atraente.</li>
+<li><strong>Power BI Desktop</strong>: To connect the data source, perform the necessary modeling and transformation, develop DAX measures for complex calculations, and build the interactive visuals that compose the dashboard.</li>
+<li><strong>Figma</strong>: The prototyping and design of the dashboard were done with Figma, ensuring an intuitive and visually appealing user experience.</li>
 </ul>
 </section>
-<section id="processo-de-etl-extração-transformação-e-carregamento" class="level2">
-<h2 class="anchored" data-anchor-id="processo-de-etl-extração-transformação-e-carregamento">Processo de ETL (Extração, Transformação e Carregamento)</h2>
-<p>O processo de ETL para o Dashboard Amazon foi rigorosamente executado para garantir a qualidade e a integridade dos dados:</p>
+<section id="etl-process-extract-transform-and-load" class="level2">
+<h2 class="anchored" data-anchor-id="etl-process-extract-transform-and-load">ETL Process (Extract, Transform, and Load)</h2>
+<p>The ETL process for the Amazon Dashboard was rigorously executed to ensure data quality and integrity:</p>
 <ol type="1">
-<li><strong>Extração</strong>: Os dados foram extraídos de uma única planilha Excel (<code>.xls</code>), que consolidava todas as informações de vendas, produtos, clientes e operações necessárias para a análise.</li>
-<li><strong>Transformação</strong>: No Power Query, parte integrante do Power BI, foram realizadas diversas operações de limpeza e enriquecimento. Isso incluiu:
+<li><strong>Extraction</strong>: Data was extracted from a single Excel spreadsheet (<code>.xls</code>), which consolidated all the sales, product, customer, and operational information necessary for the analysis.</li>
+<li><strong>Transformation</strong>: In Power Query, an integral part of Power BI, various cleaning and enrichment operations were performed. This included:
 <ul>
-<li>Tratamento de dados, como a padronização de nomes e a correção de valores.</li>
-<li>Criação de novas colunas e métricas calculadas que seriam essenciais para as análises, utilizando a linguagem M.</li>
-<li>A modelagem de dados foi cuidadosamente definida, estabelecendo relacionamentos entre as tabelas e garantindo que todas as informações pudessem ser corretamente agregadas e filtradas para uma análise multidimensional.</li>
+<li>Data treatment, such as standardizing names and correcting values.</li>
+<li>Creation of new columns and calculated metrics that would be essential for the analyses, using the M language.</li>
+<li>Data modeling was carefully defined, establishing relationships between tables and ensuring that all information could be correctly aggregated and filtered for multidimensional analysis.</li>
 </ul></li>
-<li><strong>Carregamento</strong>: Após as etapas de extração e transformação, os dados foram carregados no modelo de dados do Power BI, estando prontos para alimentar todos os gráficos e tabelas do dashboard, permitindo a exploração interativa.</li>
+<li><strong>Loading</strong>: After the extraction and transformation steps, the data was loaded into the Power BI data model, ready to feed all the charts and tables of the dashboard, allowing for interactive exploration.</li>
 </ol>
 </section>
 </section>
 <section id="dashboard" class="level1">
 <h1>Dashboard</h1>
-<p>O dashboard apresenta um layout claro e organizado, com uma navegação intuitiva entre as diferentes análises. A interface combina cartões de KPI, gráficos de barras e linhas para tendências temporais e rankings, além de tabelas detalhadas. Cada visual é projetado para destacar informações chave e permitir a exploração interativa dos dados, facilitando a identificação de padrões e insights acionáveis para o negócio.</p>
+<p>The dashboard presents a clear and organized layout, with intuitive navigation between the different analyses. The interface combines KPI cards, bar and line charts for temporal trends and rankings, as well as detailed tables. Each visual is designed to highlight key information and allow interactive data exploration, facilitating the identification of patterns and actionable insights for the business.</p>
 <section id="insights" class="level2">
 <h2 class="anchored" data-anchor-id="insights">Insights</h2>
-<p>A análise dos dados apresentados no dashboard revelou insights valiosos sobre a performance de vendas e lucratividade:</p>
+<p>The analysis of the data presented in the dashboard revealed valuable insights into sales and profitability performance:</p>
 <ul>
-<li><strong>Visão Geral Financeira Robusta</strong>:
+<li><strong>Robust Financial Overview</strong>:
 <ul>
-<li>O painel destaca um <strong>Total de Vendas de R$ 3,59 Milhões</strong> e um <strong>Total de Lucro de R$ 108 Mil</strong>.
+<li>The dashboard highlights a <strong>Total Sales of R$ 3.59 Million</strong> and a <strong>Total Profit of R$ 108 Thousand</strong>.
 <div style="text-align:center;">
 <img src="imagem1.png" alt="">
 </div></li>
-<li>A <strong>Margem de Lucro é de 3,02%</strong>, indicando a eficiência na conversão de vendas em lucro.
+<li>The <strong>Profit Margin is 3.02%</strong>, indicating efficiency in converting sales into profit.
 <div style="text-align:center;">
 <img src="imagem2.png" alt="">
 </div></li>
-<li>A análise temporal de <strong>Vendas por Ano</strong> mostra um crescimento contínuo de 2011 a 2014, com o ano de 2014 registrando o maior volume de vendas, próximo a R$ 1,5 Milhão, sublinhando uma trajetória positiva de expansão.</li>
+<li>The temporal analysis of <strong>Sales by Year</strong> shows continuous growth from 2011 to 2014, with 2014 recording the highest sales volume, close to R$ 1.5 Million, highlighting a positive trajectory of expansion.</li>
 </ul></li>
 </ul>
 <div style="text-align:center;">
 <p><img src="imagem3.png" alt=""></p>
 </div>
 <ul>
-<li><strong>Produtos e Clientes de Destaque</strong>:
+<li><strong>Featured Products and Customers</strong>:
 <ul>
-<li>Entre os <strong>Produtos Mais Vendidos</strong>, “Staples” lidera com <strong>R$ 1,2 Milhão</strong> em vendas, seguido por produtos como “Wilson Jones Clip &amp;…” e “Cardinal EasyOpen …”, com <strong>R$ 1,0 Milhão</strong>. Esses dados são cruciais para a gestão de estoque e campanhas de marketing direcionadas.
+<li>Among the <strong>Best-Selling Products</strong>, “Staples” leads with <strong>R$ 1.2 Million</strong> in sales, followed by products such as “Wilson Jones Clip &amp;…” and “Cardinal EasyOpen …”, with <strong>R$ 1.0 Million</strong>. This data is crucial for inventory management and targeted marketing campaigns.
 <div style="text-align:center;">
 <img src="imagem4.png" alt="">
 </div></li>
-<li>Na análise de <strong>Lucro por Cliente</strong>, Raymond Buch se destaca, seguido por Jane Waco, evidenciando os clientes de maior valor para o negócio e a importância de programas de fidelidade.
+<li>In the analysis of <strong>Profit by Customer</strong>, Raymond Buch stands out, followed by Jane Waco, evidencing the most valuable customers for the business and the importance of loyalty programs.
 <div style="text-align:center;">
 <p><img src="imagem5.png" alt=""></p>
 </div></li>
 </ul></li>
-<li><strong>Eficiência e Desempenho por Categoria</strong>:
+<li><strong>Efficiency and Performance by Category</strong>:
 <ul>
-<li>O Ticket Médio das vendas é de R$ 2.230,55, e o Valor Médio por Unidade é de R$ 226,49, indicando o valor transacional por pedido e por item vendido.
+<li>The <strong>Average Ticket</strong> for sales is R$ 2,230.55, and the <strong>Average Value per Unit</strong> is R$ 226.49, indicating the transactional value per order and per item sold.
 <div style="text-align:center;">
 <img src="imagem6.png" alt="">
 </div></li>
-<li>Em Número de Pedidos por Categoria, “Binders” lidera com 403 pedidos, seguido por “Paper” (384) e “Furnishings” (281), o que sugere alta demanda por esses itens.
+<li>In <strong>Number of Orders by Category</strong>, “Binders” leads with 403 orders, followed by “Paper” (384) and “Furnishings” (281), suggesting high demand for these items.
 <div style="text-align:center;">
 <img src="imagem7.png" alt="">
 </div></li>
-<li>A Vendas por Categoria mostram “Copiers” com R$ 0,50 Milhão** e “Phones” com R$ 0,49 Milhão, liderando em receita.
+<li><strong>Sales by Category</strong> shows “Copiers” with R$ 0.50 Million and “Phones” with R$ 0.49 Million, leading in revenue.
 <div style="text-align:center;">
 <img src="imagem8.png" alt="">
 </div></li>
-<li>Por outro lado, em Lucro por Categoria, “Tables” (R$ 19 Mil), “Copiers” (R$ 16 Mil) e “Binders” (R$ 16 Mil) são os maiores contribuintes, revelando que nem sempre as categorias com maior volume de vendas são as mais lucrativas.
+<li>On the other hand, in <strong>Profit by Category</strong>, “Tables” (R$ 19 Thousand), “Copiers” (R$ 16 Thousand), and “Binders” (R$ 16 Thousand) are the largest contributors, revealing that categories with the highest sales volume are not always the most profitable.
 <div style="text-align:center;">
 <p><img src="imagem9.png" alt=""></p>
 </div></li>
 </ul></li>
-<li><strong>Performance de Pedidos e Clientes</strong>:
+<li><strong>Order and Customer Performance</strong>:
 <ul>
-<li>O Tempo Médio de Entrega é de 3,93 dias, um KPI importante para a satisfação do cliente. O Número Total de Pedidos no período é de 1.611.
+<li>The <strong>Average Delivery Time</strong> is 3.93 days, an important KPI for customer satisfaction. The <strong>Total Number of Orders</strong> in the period is 1,611.
 <div style="text-align:center;">
 <img src="imagem10.png" alt="">
 </div></li>
-<li>A análise de Pedidos por Mês ao longo dos anos revela que Setembro (227), Novembro e Dezembro (ambos com 234 pedidos, são os meses de pico, sugerindo sazonalidade nas compras.
+<li>The analysis of <strong>Orders by Month</strong> over the years reveals that September (227), November, and December (both with 234 orders) are peak months, suggesting seasonality in purchases.
 <div style="text-align:center;">
 <img src="imagem11.png" alt="">
 </div></li>
-<li>Em Número de Pedidos por Cliente, Arianne Irving e Bill Donatelli estão entre os clientes com 7 pedidos cada, mostrando alta frequência de compra.
+<li>In <strong>Number of Orders by Customer</strong>, Arianne Irving and Bill Donatelli are among the customers with 7 orders each, showing high purchase frequency.
 <div style="text-align:center;">
 <img src="imagem12.png" alt="">
 </div></li>
-<li><strong>Total de Vendas por Cliente</strong> reitera o valor de Raymond Buch (R$ 58 Mil) e Nora Preis (R$ 55 Mil) como os clientes que geram mais receita.
+<li><strong>Total Sales by Customer</strong> reiterates the value of Raymond Buch (R$ 58 Thousand) and Nora Preis (R$ 55 Thousand) as the customers who generate the most revenue.
 <div style="text-align:center;">
 <p><img src="imagem13.png" alt=""></p>
 </div></li>
 </ul></li>
 </ul>
 </section>
-<section id="considerações" class="level2">
-<h2 class="anchored" data-anchor-id="considerações">Considerações</h2>
-<p>O dashboard oferece uma base sólida para otimizar as operações e as estratégias de vendas da Amazon (simulada). A partir dos insights obtidos, algumas considerações importantes surgem:</p>
+<section id="considerations" class="level2">
+<h2 class="anchored" data-anchor-id="considerations">Considerations</h2>
+<p>The dashboard offers a solid basis for optimizing Amazon’s (simulated) operations and sales strategies. Based on the insights obtained, some important considerations emerge:</p>
 <ul>
-<li><strong>Otimização do Mix de Produtos</strong>: A diferença entre categorias mais vendidas e mais lucrativas (“Copiers” e “Phones” vs.&nbsp;“Tables”) indica a necessidade de uma análise mais aprofundada de custos e precificação. A empresa pode focar em aumentar as vendas de itens de alta lucratividade ou buscar maneiras de melhorar a margem de produtos de alto volume.</li>
-<li><strong>Gestão de Estoque e Demanda Sazonal</strong>: O pico de pedidos entre Setembro e Dezembro é um indicativo claro de sazonalidade. A gestão de estoque e o planejamento de campanhas de marketing devem ser intensificados nesses meses para capitalizar a demanda.</li>
-<li><strong>Melhora Contínua do Tempo de Entrega</strong>: Um tempo médio de entrega de 3,93 dias é razoável, mas em um ambiente competitivo como o e-commerce, a otimização contínua desse KPI pode ser um diferencial crucial para a satisfação e retenção de clientes.</li>
-<li><strong>Programas de Fidelidade e VIP</strong>: A identificação dos clientes de maior valor, tanto em lucro quanto em vendas, permite a criação de programas de fidelidade ou ofertas personalizadas para incentivar a recompra e fortalecer o relacionamento.</li>
-<li><strong>Análise de Desempenho por Ano</strong>: A tendência de crescimento anual é positiva, mas é importante investigar os fatores que impulsionaram o aumento das vendas em 2014 para replicar essas estratégias em períodos futuros.</li>
+<li><strong>Product Mix Optimization</strong>: The difference between best-selling and most profitable categories (“Copiers” and “Phones” vs.&nbsp;“Tables”) indicates the need for a more in-depth cost and pricing analysis. The company can focus on increasing sales of highly profitable items or seek ways to improve the margin of high-volume products.</li>
+<li><strong>Inventory Management and Seasonal Demand</strong>: The peak in orders between September and December is a clear indicator of seasonality. Inventory management and marketing campaign planning should be intensified during these months to capitalize on demand.</li>
+<li><strong>Continuous Improvement of Delivery Time</strong>: An average delivery time of 3.93 days is reasonable, but in a competitive environment like e-commerce, continuous optimization of this KPI can be a crucial differentiator for customer satisfaction and retention.</li>
+<li><strong>Loyalty and VIP Programs</strong>: Identifying the most valuable customers, both in terms of profit and sales, allows for the creation of loyalty programs or personalized offers to encourage repeat purchases and strengthen relationships.</li>
+<li><strong>Performance Analysis by Year</strong>: The annual growth trend is positive, but it is important to investigate the factors that drove the increase in sales in 2014 to replicate these strategies in future periods.</li>
 </ul>
 </section>
-<section id="conclusão" class="level2">
-<h2 class="anchored" data-anchor-id="conclusão">Conclusão</h2>
-<p>O Dashboard foi uma ferramenta analítica abrangente que transforma dados de vendas e operações em inteligência de negócio acionável. Sua principal contribuição reside na capacidade de:</p>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The Dashboard was a comprehensive analytical tool that transforms sales and operational data into actionable business intelligence. Its main contribution lies in its ability to:</p>
 <ul>
-<li>Fornecer uma visão clara da performance financeira geral e da trajetória de crescimento da empresa.</li>
-<li>Identificar os produtos, categorias e clientes que impulsionam a receita e o lucro.</li>
-<li>Analisar a eficiência operacional e os padrões sazonais de pedidos.</li>
+<li>Provide a clear view of the overall financial performance and the company’s growth trajectory.</li>
+<li>Identify the products, categories, and customers that drive revenue and profit.</li>
+<li>Analyze operational efficiency and seasonal order patterns.</li>
 </ul>
 </section>
-<section id="link-para-o-dashboard" class="level2">
-<h2 class="anchored" data-anchor-id="link-para-o-dashboard">Link para o Dashboard:</h2>
-<p><a href="https://app.powerbi.com/groups/me/reports/f3677347-a80f-4fd0-aad8-4a1b5c33b243/ReportSection45c8cf44a92cf66d802f?experience=power-bi" target="_blank" rel="noopener noreferrer"> Clique aqui para acessar o relatório no Power BI </a></p>
+<section id="link-to-the-dashboard" class="level2">
+<h2 class="anchored" data-anchor-id="link-to-the-dashboard">Link to the Dashboard:</h2>
+<p><a href="https://app.powerbi.com/groups/me/reports/f3677347-a80f-4fd0-aad8-4a1b5c33b243/ReportSection45c8cf44a92cf66d802f?experience=power-bi" rel="noopener noreferrer"> Click here to access the report in Power BI </a></p>
 </section>
 </section>
 
